@@ -59,7 +59,7 @@ client.on("messageCreate", async (message) => {
     if (mesajlar > config.settings.mesaj_sayisi || mesajlar === config.settings.mesaj_sayisi) {
         const embed = new EmbedBuilder()
             .setColor("Green")
-            .setAuthor({ name: `${message.author.username} tebrikler ödül kazıandın 🎉`, iconURL: message.author.displayAvatarURL() })
+            .setAuthor({ name: `${message.author.username} tebrikler ödül kazandın 🎉`, iconURL: message.author.displayAvatarURL() })
             .setDescription(`Sunucuda **${config.settings.mesaj_sayisi}** mesaj attığın için **${config.settings.kazandiği_odul}** kazandın.`)
             .setFooter({ text: "Coded by Speste & Slenzy", iconURL: client.user.displayAvatarURL() })
         const button = new ActionRowBuilder()
